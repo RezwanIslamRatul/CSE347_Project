@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bkash</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style>
+        /* Target large screens (desktops) */
+        @media (min-width: 768px) {
+            form {
+                width: 600px; /* Adjust as needed */
+                margin-right: 0; /* Move the form to the right */
+            }
+        }
+
+        /* Target smaller screens (tablets, phones) */
+        @media (max-width: 767px) {
+            form {
+                width: 100%; /* Make the form fill the width */
+                padding: 20px; /* Adjust padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body background="img/bkash.png" style="background-repeat:no-repeat;background-size:100% 140%">
+    <div class="container">
+        <div class="row col-md-12 col-md-offset-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <font face="STENCIL" color="white"><b><i><u><center><h1>Bkash</h1></center></u></i></b></font>
+                </div>
+                <div class="panel-body">
+                    <form action="Bconnect.php" method="post">
+                        <div class="form-group">
+                            <font face="Alumni Sans Pinstripe"><b><center><h1><label>Agent Number:01712345678</label></h1></center></b></font>
+                        </div>
+                        <div class="form-group">
+                            <font face="Arial"><b><i><u><center><h1><label>Bkash number</label></h1></center></u></i></b></font>
+                            <input type="text" class="form-control" name="bkash" pattern="\d{11}" title="Bkash number must be exactly 11 digits" required />
+                        </div>
+                        <div class="form-group">
+                            <font face="Arial"><b><i><u><center><h1><label>TRX ID</label></h1></center></u></i></b></font>
+                            <input type="text" class="form-control" name="trx" pattern="[A-Za-z0-9]+" title="TRX ID must be alphanumeric" required />
+                        </div>
+                        <div class="form-group">
+                            <font face="Arial"><b><i><u><center><h1><label>Amount (BDT)</label></h1></center></u></i></b></font>
+                            <input type="number" class="form-control" name="amount" required />
+                        </div>
+                        <input type="submit" class="btn btn-primary">
+                    </form>
+                </div>
+                <div class="panel-footer text-right">
+                    <small>&copy; BRAC Bank ltd.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

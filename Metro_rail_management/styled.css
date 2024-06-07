@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.containers{
+    max-width: 100%;
+    font-size: 35px; 
+    padding:50px;
+    margin: auto;
+
+}
+.btn{
+    color: rgb(161, 11, 11);
+    background: rgb(21, 215, 21);
+    padding: 6px 10px;
+    font-size: 16px;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
